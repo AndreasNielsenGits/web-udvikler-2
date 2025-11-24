@@ -6,17 +6,9 @@
   --link: #a45ee5;
   --active-link: #8448bd;
   --active-hover: #8448bd;
+  --description-color: #F8E4A3;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-link: var(--link);
-  --color-active-link: var(--active-link);
-  --color-hover-link: var(--hover-link);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -34,19 +26,11 @@ body {
 @layer components {
   
   /*Homepage*/
-  
-  .sitefooter {
-    background: linear-gradient(to left, #FFE869, #FCB216);
-    border-bottom: 0.7rem solid black;
-    height: 5.6rem;
-    grid-column: span 2;
-    width: 100%;
-    display: flex;
-}
+
   .sidebar {
     display: grid;
     grid-template-columns: 2fr auto;
-    grid-row: span 5; 
+    grid-row: span 6; /* add 1 to equation, everytime new project is added*/
     flex-direction: column;
     background: linear-gradient(to bottom, #FFE869, #FCB216);
     width: 2rem;
@@ -73,6 +57,61 @@ body {
         margin-top: .2rem;
         cursor: pointer;
   }
+  .sidebar-menu{
+    width: 100%;
+    grid-column: 1 / -1;
+  }
+  .sidebar-icons{
+    font-size: 24px;
+    color: black;
+    margin-left: 0.25rem;
+  }
+
+  .homepage-section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+  /*-----homeproject-cards-----*/
+  .home-page-project {
+        display: flex;
+        grid-column: span 1;
+        align-content: center;
+  }
+  .home-page-project div {
+      margin-left: 1.5rem;
+  }
+
+  .home-page-project img {
+  border: solid;
+  border-image: linear-gradient(#FFE869, #FCB216) 3 / 30px;
+  order: -1;
+}
+
+/* modifier */
+.home-page-project--right {
+  align-content: center;
+  justify-content: right;
+  margin-right: 1.5rem;
+}
+.home-page-project--right div {
+  margin-left: 0;
+}
+
+/* modifier image override */
+.home-page-project--right img {
+  order: unset;
+}
+
+/* view more section */
+.home-page-project__viewmore {
+  display: flex;
+  gap: 0.5rem;
+}
+
 
   /*-----Header------*/
 
@@ -84,8 +123,23 @@ body {
     align-items: center;
     grid-column: span 2;
   }
+  .siteheader-button{
+    
+  }
 
     .mylogo {
         margin-top: 0.5rem;
     }
 }
+
+/*-----footer-----*/
+  
+  .sitefooter {
+    background: linear-gradient(to left, #FFE869, #FCB216);
+    border-top: 0.7rem solid black;
+    border-bottom: 0.7rem solid black;
+    height: 5.6rem;
+    grid-column: span 2;
+    width: 100%;
+    display: flex;
+} 

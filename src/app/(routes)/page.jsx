@@ -1,16 +1,13 @@
-import FooterComponent from "@/components/ui/footer/footer";
-import HeaderComponent from "@/components/ui/header/header";
 import HomePageProject from "@/components/ui/homepageproject/homepageproject";
 import SidebarNavigation from "@/components/ui/sidebar-navigation/sidebar-navigation";
-import Link from "next/link";
 
 export default function Home() {
   return (
       <>
             <section className="homepage-section">
-            <HeaderComponent />
+            
                 <SidebarNavigation />
-                <article className="aboutme">
+                <article className="aboutme text-[var(--description-color)]" >
                     <h2>Om Mig</h2>
                     <p>
                         Jeg hedder Andreas Nielsen
@@ -22,7 +19,7 @@ export default function Home() {
                         med React og installationen af det.
                     </p>
                 </article>
-                <h2 className="projectsTitle">Projekter</h2>
+                <h2 className="projectsTitle text-[var(--description-color)]">Projekter</h2>
                 <HomePageProject
                     title="Moviez"
                     previewImage="/darkprojectpreview.png"
@@ -46,15 +43,14 @@ export default function Home() {
                     renderUrl="https://newsify-bingbingdawg.onrender.com/"
                     projectUrl="/projects"
                 />
-            
-           
-            <FooterComponent> 
-            <div className="flex flex-col">
-                <h2>Kontakter</h2>
-                <Link href="mailto:andreasnieslen@gmail.com">Andreasnieslen@gmail.com</Link>
-                <Link href="https://www.linkedin.com/in/andreas-nieslen-2a8851260/" target="_blank" className="border-b-[1rem]">Linkdin</Link>
-            </div>
-            </FooterComponent>
+                 <HomePageProject
+                    title="Newsify"
+                    previewImage="/newsify.png"
+                    imageAlign="right"
+                    previewDescreption="Newsify is a mobile app that is used to look up news"
+                    renderUrl="https://newsify-bingbingdawg.onrender.com/"
+                    projectUrl="/projects"
+                />
             </section>
        </>
     );

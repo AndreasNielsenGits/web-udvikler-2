@@ -21,7 +21,7 @@ export default function HeaderComponent(){
                         <Link className="text-white" href="/cv">CV</Link>
                     </li>
                     <li>
-                        <h1><Link className="" href="/"><Image src="/mylogo.png" height={20} width={20} className="mylogo" alt="" /></Link></h1>
+                        <h1><Link className="" href="/"><Image src="/mylogo.png" height={20} width={20} className="mylogo" alt="logo" /></Link></h1>
                     </li>
                 </ul>
             </nav>

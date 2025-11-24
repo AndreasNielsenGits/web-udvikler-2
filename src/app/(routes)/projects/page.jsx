@@ -6,13 +6,13 @@ import FooterComponent from "@/components/ui/footer/footer"
 export default function Projects(){
     return (
         <>
-        <HeaderComponent />
+        
 
         <h1 className="projects-heading">Projects</h1>
         <div className="wrapper">
         <ProjectCards
             title="Moviez"
-            projectThumbnail="/darkprojectpreview.ong"
+            projectThumbnail="/darkprojectpreview.png"
             description="Moviz is a mobile app used to view and favorite movies, tv-shows and actors"
             siteLink="https://projekt-moviez-bingbingdawg.onrender.com"
         />
@@ -35,7 +35,6 @@ export default function Projects(){
             siteLink="https://bornelejren-pa-langeland-bingbingdawg.onrender.com/"
             />
         </div>
-        <FooterComponent />
         </>
 
     )

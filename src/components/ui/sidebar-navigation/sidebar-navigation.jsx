@@ -17,32 +17,32 @@ export default function SidebarNavigation() {
         <aside ref={sidebar} className="sidebar">
            
             <button className="sidebar-button" onClick={() => sidebar.current.classList.toggle("sidebar--open")}><GiHamburgerMenu className="sidebar-burgermenu"/></button>
-            <Image role="heading" aria-level="1" src={"/mylogo"} alt="" width={20} height={20} className="sidebar-logo"/>
+            <Image role="heading" aria-level="1" src="/mylogo.png" alt="logo" width={20} height={20} className="sidebar-logo"/>
 
-            <nav className="sidebar__menu">
+            <nav className="sidebar-menu">
                 <ul>
 
                     <li className="sidebar__list">
                         <Link href="/" className="sidebar__link">
-                            <BiHome className="sidebar__icons"/><span className="sidebar__link-text">Home</span>
+                            <BiHome className="sidebar-icons"/><span className="sidebar__link-text">Home</span>
                         </Link>
                     </li>
 
                     <li className="sidebar__list">
                         <Link href="/aboutme" className="sidebar__link">
-                            <BsFillPersonVcardFill className="sidebar__icons"/><span className="sidebar__link-text">About Me</span>
+                            <BsFillPersonVcardFill className="sidebar-icons"/><span className="sidebar__link-text">About Me</span>
                         </Link>
                     </li>
 
                     <li className="sidebar__list">
                         <Link href="/projects" className="sidebar__link">
-                            <PiProjectorScreen className="sidebar__icons" /> <span className="sidebar__link-text">Projects</span> 
+                            <PiProjectorScreen className="sidebar-icons" /> <span className="sidebar__link-text">Projects</span> 
                         </Link>
                     </li>
 
                     <li className="sidebar__list">
                         <Link href="/cv" className="sidebar__link">
-                            <img src={"/cvicon"} className="sidebar__icons"/><span className="sidebar__link-text">CV</span>
+                            <img src="/cvicon.png" className="sidebar-icons"/><span className="sidebar__link-text">CV</span>
                         </Link>
                     </li>
 
