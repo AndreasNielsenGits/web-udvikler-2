@@ -11,13 +11,13 @@ import Image from "next/image";
 export default function SidebarNavigation() {
 
 
-    const sidebar = useRef();
+    const sidebar = useRef(null);
 
     return(
         <aside ref={sidebar} className="sidebar">
            
             <button className="sidebar-button" onClick={() => sidebar.current.classList.toggle("sidebar--open")}><GiHamburgerMenu className="sidebar-burgermenu"/></button>
-            <Image role="heading" aria-level="1" src="/mylogo.png" alt="logo" width={20} height={20} className="sidebar-logo"/>
+            <Image role="heading" aria-level="1" src="/mylogo.png" alt="logo" width={40} height={40} className="sidebar__logo"/>
 
             <nav className="sidebar-menu">
                 <ul>

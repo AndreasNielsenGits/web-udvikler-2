@@ -17,6 +17,11 @@ export default function Home() {
                         arbejdet med forskellige som Dynamisk Web med Jest,
                         Sass, Api og Frameworks hvor jeg har arbejdet
                         med React og installationen af det.
+
+                        I'm Andreas a newly educated web developer with a 
+                        passion for creating dynamic and user-friendly web applications. 
+                        I have experience working with various technologies including Jest, 
+                        Sass, APIs, and frameworks like React.
                     </p>
                 </article>
                 <h2 className="projectsTitle text-[var(--description-color)]">Projekter</h2>
@@ -44,11 +49,11 @@ export default function Home() {
                     projectUrl="/projects"
                 />
                  <HomePageProject
-                    title="Newsify"
-                    previewImage="/newsify.png"
+                    title="Boernelejren på Langeland"
+                    previewImage="/boernelejre-thumbnail.png"
                     imageAlign="right"
-                    previewDescreption="Newsify is a mobile app that is used to look up news"
-                    renderUrl="https://newsify-bingbingdawg.onrender.com/"
+                    previewDescreption="Boernelejren på Langeland is a charitable non-profitable website that host camps for poorly posed children and young people"
+                    renderUrl="hhttps://bornelejren-pa-langeland-bingbingdawg.onrender.com/"
                     projectUrl="/projects"
                 />
             </section>

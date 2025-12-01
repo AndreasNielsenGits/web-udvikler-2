@@ -19,7 +19,7 @@ export default function Projects(){
         <ProjectCards 
             title="PikaWiki"
             projectThumbnail="/pokedex.png"
-            description="Moviz is a mobile app used to view and favorite movies, tv-shows and actors"
+            description="Pikawiki is a pokedex that's used to look up pokemon and it's information"
             siteLink="https://pokedex-bingbingdawg.onrender.com"
         />
         <ProjectCards 
@@ -31,7 +31,7 @@ export default function Projects(){
         <ProjectCards 
             title="Boernelejren på Langeland"
             projectThumbnail="/boernelejre-thumbnail.png"
-            description="Moviz is a mobile app used to view and favorite movies, tv-shows and actors"
+            description="Boernelejren på Langeland is a charitable non-profitable website that host camps for poorly posed children and young people"
             siteLink="https://bornelejren-pa-langeland-bingbingdawg.onrender.com/"
             />
         </div>
